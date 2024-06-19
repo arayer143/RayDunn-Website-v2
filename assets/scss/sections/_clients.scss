@@ -1,0 +1,64 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Clients Section
+--------------------------------------------------------------*/
+.clients {
+  padding: 20px 0;
+
+
+  .client-title {
+    text-align: center;
+    padding-bottom: 60px;
+    position: relative;
+  
+    h2 {
+      font-size: 27px;
+      font-weight: 700;
+      margin-bottom: 5px;
+      padding-bottom: 5px;
+      position: relative;
+  
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: var(--accent-color);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+  }
+
+
+
+
+  .client-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+
+
+    img {
+      padding: 20px 40px;
+      max-width: 100%;
+      transition: 0.3s;
+      opacity: 5;
+      filter: grayscale(90);
+
+      &:hover {
+        filter: none;
+        opacity: 1;
+      }
+
+      @media (max-width: 640px) {
+        padding: 20px;
+      }
+    }
+  }
+}

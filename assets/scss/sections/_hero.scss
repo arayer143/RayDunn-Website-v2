@@ -1,0 +1,107 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  width: 100%;
+  min-height: 70vh;
+  position: relative;
+  padding: 180px 0 40px 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  .hero-bg {
+    img {
+      position: absolute;
+      inset: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+     
+    }
+
+    &::before {
+      content: '';
+      background: color-mix(in srgb, var(--hero-background), transparent 55%);
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+    }
+  }
+
+  img{
+    margin-bottom: 2rem;
+  }
+
+  .container {
+    position: relative;
+    z-index: 3;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: white;
+
+    span {
+      color: var(--primary);
+    }
+  }
+
+  p {
+    color: white;
+    margin: 5px 0 30px 0;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  @media (min-width: 768px) {
+    .hero-img {
+      max-width: 300px;
+    }
+  }
+
+  .btn-get-started {
+    color: var(--contrast-color);
+    background: var(--accent-color);
+    font-family: var(--heading-font);
+    font-weight: 500;
+    margin-right: 1rem;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    box-shadow: 0 8px 28px color-mix(in srgb, var(--accent-color), transparent 80%);
+
+    &:hover {
+      color: var(--contrast-color);
+      background: color-mix(in srgb, var(--accent-color), transparent 15%);
+      box-shadow: 0 8px 28px color-mix(in srgb, var(--accent-color), transparent 55%);
+    }
+  }
+
+
+
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+
+
+  }
+  
+}
