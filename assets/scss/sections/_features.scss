@@ -62,8 +62,126 @@
   }
 
   .tab-pane {
+    background: color-mix(in srgb, var(--accent-color), transparent 92%);
+    
     img {
       border-radius: 15px;
+    }
+
+    .tab-info{
+      
+
+      .icon-box {
+        box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.10);
+        padding: 4rem;
+        transition: all ease-in-out 0.4s;
+        background: color-mix(in srgb, var(--accent-color), transparent 92%);
+        max-width: 80%;
+        border-radius: 2rem;
+    
+     
+    
+    
+    
+        
+    
+        .icon {
+  
+          text-align: center;
+    
+          i {
+            color: --primary;
+            font-size: 36px;
+            transition: 0.3s;
+          }
+      
+        }
+    
+        h4 {
+          font-weight: 500;
+          margin-bottom: 15px;
+          font-size: 24px;
+          text-align: center;
+          a {
+            color: var(--default-color);
+            transition: ease-in-out 0.3s;
+          }
+      
+        }
+    
+        p {
+          line-height: 24px;
+          font-size: 14px;
+          margin-bottom: 0;
+          text-align: center;
+        }
+    
+        &:hover {
+          transform: translateY(-10px);
+          h4 a {
+            color: var(--primary);
+          }
+        }
+      }
+    
+    
+    
+      .icon-box-bottom {
+        box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.10);
+        padding: 50px 30px;
+        transition: all ease-in-out 0.4s;
+        background: whitesmoke;
+        max-width: 80%;
+        border-radius: 2rem;
+        margin-left: 5rem;
+      
+       
+       
+    
+     
+    
+    
+    
+        
+    
+        .icon {
+          margin-bottom: 10px;
+          text-align: center;
+    
+          i {
+            color: var(--primary);
+            font-size: 36px;
+            transition: 0.3s;
+          }
+      
+        }
+    
+        h4 {
+          font-weight: 500;
+          margin-bottom: 15px;
+          font-size: 24px;
+          text-align: center;
+          a {
+            color: var(--default-color);
+            transition: ease-in-out 0.3s;
+          }
+      
+        }
+    
+        p {
+          line-height: 24px;
+          font-size: 14px;
+          margin-bottom: 0;
+          text-align: center;
+        }
+    
+        &:hover {
+          transform: translateY(-10px);
+          h4 a {
+            color:var(--primary);
+          }
+        }
+      }
     }
   }
 }

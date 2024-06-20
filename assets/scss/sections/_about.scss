@@ -7,10 +7,12 @@
 background-color: var(--alternate-section-color);
 
   .content {
+    margin-left: 4rem;
     .who-we-are {
       text-transform: uppercase;
       margin-bottom: 15px;
-      color: color-mix(in srgb, var(--default-color), transparent 40%);
+      font-weight: 600;
+      color: black;
     }
 
     h3 {
@@ -35,6 +37,7 @@ background-color: var(--alternate-section-color);
 
     p:last-child {
       margin-bottom: 0;
+      font-size: medium;
     }
 
     .read-more {
@@ -74,6 +77,6 @@ background-color: var(--alternate-section-color);
     margin-top: 1rem;
     margin-right: 2rem;
     padding: 2rem;
-    background-color: rgb(39, 39, 39);
+    background-color: rgb(78, 78, 78);
   }
 }
