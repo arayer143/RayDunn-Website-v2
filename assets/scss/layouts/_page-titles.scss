@@ -6,18 +6,25 @@
   --background-color: color-mix(in srgb, var(--default-color), transparent 96%);
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 25px 0;
+ 
+  height: 300px;
   position: relative;
+
 
   h1 {
     font-size: 24px;
     font-weight: 700;
+    color: white;
+   
+    text-align: center;
+
   }
+
 
   .breadcrumbs {
     ol {
       display: flex;
-      flex-wrap: wrap;
+  
       list-style: none;
       padding: 0;
       margin: 0;
