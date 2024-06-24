@@ -2,9 +2,9 @@
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about {
-  padding-bottom: 10px;
-  --background-color: color-mix(in srgb, var(--accent-color), transparent 97%);
+.about-page {
+
+  margin-top: 20rem;
 
   .content {
     margin-left: 1rem;
@@ -110,4 +110,7 @@
     padding: 2rem;
     background-color: rgb(87, 86, 86);
   }
+
+
+
 }
