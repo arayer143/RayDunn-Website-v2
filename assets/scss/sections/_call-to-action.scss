@@ -11,6 +11,7 @@
   h3 {
     font-size: 28px;
     font-weight: 700;
+    color: var(--primary);
   }
 
   .cta-btn {
@@ -26,7 +27,7 @@
     border: 2px solid #fff;
     color: #fff;
     &:hover {
-      background: var(--default-color);
+      background: grey;
       color: var(--primary);
     }
   }

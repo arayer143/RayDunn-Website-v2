@@ -1142,6 +1142,38 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Call To Action Section
+--------------------------------------------------------------*/
+.cta {
+  background: var(--hero-background);
+  color: #fff;
+  background-size: cover;
+  padding: 60px 0;
+}
+.cta h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary);
+}
+.cta .cta-btn {
+  font-family: var(--default-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 35px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+.cta .cta-btn:hover {
+  background: grey;
+  color: var(--primary);
+}
+
+/*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
 .features .nav-tabs {
