@@ -1,7 +1,3 @@
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -28,11 +24,6 @@
   --nav-dropdown-background-color: #4d4b4b; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #313336; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #77b6ca; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
-}
-
-/* Smooth scroll */
-:root {
-  scroll-behavior: smooth;
 }
 
 /*--------------------------------------------------------------
@@ -638,6 +629,9 @@ h6 {
 .footer .copyright p {
   margin-bottom: 0;
 }
+.footer .copyright a {
+  color: #d4af37;
+}
 .footer .credits {
   margin-top: 6px;
   font-size: 13px;
@@ -1009,83 +1003,44 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about-page {
-  margin-top: 20rem;
-}
 .about-page .content {
-  margin-left: 1rem;
-}
-.about-page .content .who-we-are {
-  text-transform: uppercase;
-  margin-bottom: 15px;
-  font-weight: 600;
-  color: black;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+  padding: 40px;
 }
 .about-page .content h3 {
-  font-size: 2rem;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
+.about-page .content h2 {
+  font-size: 24px;
   font-weight: 700;
 }
-@media (max-width: 450px) {
-  .about-page .content h3 {
-    text-align: center;
-    margin-right: 1rem;
-  }
+.about-page .content p {
+  margin: 15px 0 30px 0;
+  line-height: 24px;
 }
-.about-page .content ul {
-  list-style: none;
-  padding: 0;
-}
-.about-page .content ul li {
-  padding-bottom: 10px;
-}
-.about-page .content ul i {
-  font-size: 1.25rem;
-  margin-right: 4px;
-  color: var(--accent-color);
-}
-.about-page .content p:last-child {
-  margin-bottom: 0;
-  font-size: medium;
-  width: 100%;
-}
-@media (max-width: 450px) {
-  .about-page .content .hero-p {
-    text-align: center;
-    margin-right: 1rem;
-  }
-}
-.about-page .content .read-more {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  font-family: var(--heading-font);
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  padding: 12px 24px;
-  border-radius: 5px;
-  transition: 0.3s;
-  display: inline-flex;
+.about-page .content .social-links a {
+  display: flex;
   align-items: center;
   justify-content: center;
-}
-.about-page .content .read-more i {
-  font-size: 18px;
-  margin-left: 5px;
-  line-height: 0;
+  background: var(--accent-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+  font-size: 16px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  margin-right: 10px;
   transition: 0.3s;
 }
-.about-page .content .read-more:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
-  padding-right: 19px;
+.about-page .content .social-links a i {
+  color: white;
 }
-.about-page .content .read-more:hover i {
-  margin-left: 10px;
-}
-.about-page .about-images img {
-  border-radius: 10px;
-  margin-right: 2rem;
-  padding: 2rem;
-  background-color: rgb(87, 86, 86);
+.about-page .content .social-links a:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /*--------------------------------------------------------------

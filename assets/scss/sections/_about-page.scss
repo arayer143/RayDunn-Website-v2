@@ -2,115 +2,54 @@
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+
 .about-page {
-
-  margin-top: 20rem;
-
+  
   .content {
-    margin-left: 1rem;
-    .who-we-are {
-      text-transform: uppercase;
-      margin-bottom: 15px;
-      font-weight: 600;
-      color: black;
-
-
-
-    }
+    background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+    padding: 40px;
 
     h3 {
-      font-size: 2rem;
+      font-size: 14px;
       font-weight: 700;
-      @media (max-width: 450px){
-        text-align: center;
-        margin-right: 1rem;
-       }
+      color: var(--accent-color);
+      text-transform: uppercase;
     }
 
-    ul {
-      list-style: none;
-      padding: 0;
-
-      li {
-        padding-bottom: 10px;
-      }
-
-      i {
-        font-size: 1.25rem;
-        margin-right: 4px;
-        color: var(--accent-color);
-      }
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
     }
 
-    p:last-child {
-      margin-bottom: 0;
-      font-size: medium;
-      width: 100%;
+    p {
+      margin: 15px 0 30px 0;
+      line-height: 24px;
     }
 
- 
-          .hero-p{
-       @media (max-width: 450px){
-        text-align: center;
-        margin-right: 1rem;
-       }
-
-  
-    }
-
-   
-
-
-
-
-
-
-
-    .read-more {
-      background: var(--accent-color);
-      color: var(--contrast-color);
-      font-family: var(--heading-font);
-      font-weight: 500;
-      font-size: 16px;
-      letter-spacing: 1px;
-      padding: 12px 24px;
-      border-radius: 5px;
-      transition: 0.3s;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-
-      i {
-        font-size: 18px;
-        margin-left: 5px;
-        line-height: 0;
+    .social-links {
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--accent-color);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+        font-size: 16px;
+        color: color-mix(in srgb, var(--default-color), transparent 30%);
+        margin-right: 10px;
         transition: 0.3s;
-      }
-
-      &:hover {
-        background: color-mix(in srgb, var(--accent-color), transparent 20%);
-        padding-right: 19px;
-
-        i {
-          margin-left: 10px;
+  
+        i{
+          color:white;
+        }
+  
+        &:hover {
+          color: var(--accent-color);
+          border-color: var(--accent-color);
         }
       }
     }
   }
-
-  .about-images 
-  
-  
-  
-  
-  
-  img {
-    border-radius: 10px;
-    margin-right: 2rem;
-    padding: 2rem;
-    background-color: rgb(87, 86, 86);
-  }
-
-
-
 }

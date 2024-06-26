@@ -1,8 +1,5 @@
 // main: main.scss
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
+
 
 /* Fonts */
 :root {
@@ -34,7 +31,7 @@
   --nav-dropdown-hover-color: #77b6ca; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
-/* Smooth scroll */
-:root {
-  scroll-behavior: smooth;
-}
+
+
+
+$primary: #d4af37;
