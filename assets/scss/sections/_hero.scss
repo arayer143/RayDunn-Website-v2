@@ -5,8 +5,9 @@
 .hero {
   width: 100%;
   min-height: 70vh;
+  display: flex;
   position: relative;
-
+  background-color: gray;
   padding: 180px 0 40px 0;
   display: flex;
   align-items: center;
@@ -18,8 +19,7 @@
     img {
       position: absolute;
       inset: 0;
- 
-      display: block;
+      display: flex;
       width: 100vw;
       height: 100vh;
       object-fit: cover;
@@ -36,7 +36,6 @@
     &::before {
       content: '';
       background: color-mix(in srgb, var(--hero-background), transparent 45%);
-   
       position: absolute;
       inset: 0;
       z-index: 2;

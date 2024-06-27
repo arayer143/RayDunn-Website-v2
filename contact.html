@@ -43,7 +43,7 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html#hero">Home</a></li>
-          <li><a href="index.html#about" class="active">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
 
@@ -69,7 +69,7 @@
 
 
           -->
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -90,7 +90,7 @@
     <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/raydunnlogoheadert.webp');">
       <div class="container position-relative" data-aos="fade">
 
-        <h2>Abouts Us</h2>
+        <h2>Contact Us</h2>
    
 
       </div>
@@ -103,42 +103,65 @@
 
 
 
-    <!-- About Section -->
-    <section id="about-page" class="about-page section">
+   
 
-      <div class="container" data-aos="fade-up">
-        <div class="row gx-0">
 
-          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="content">
-              <h3>Who We Are</h3>
-              <h2>RayDunn Web Solutions</h2>
-              <p>
-                RayDunn Web Solutions a Web Development Company in New Orleans, LA that specalizes in making websites for business to stand out in this internet driven world!
-              </p>
-            
-                <div class="social-links d-flex mt-4">
-                  <a href="https://www.facebook.com/profile.php?id=61555772144949"><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                  <a href="malto:raydunntech@gmail.com"><i class="bi bi-envelope-fill"></i></a>
-                  <a href="malto:raydunntech@gmail.com"><i class="bi bi-telephone-fill"></i></a>
-                </div>
-             
-            </div>
-          </div>
+ <!-- ======= Appointment Section ======= -->
+ <section id="appointment" class="appointment section-bg">
+  <div class="container" data-aos="fade-up">
 
-          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/Raydunn-logo-noBG.png" class="img-fluid" alt="">
-          </div>
+    <div class="section-title">
+      <h2>Fill out our Questionaire!</h2>
+      <p>Give us some of your business' information and we will get back to you!</p>
+    </div>
 
+    <form action="forms/appointment.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+      <div class="row">
+        <div class="col-md-4 form-group">
+          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+        </div>
+        <div class="col-md-4 form-group mt-3 mt-md-0">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+        </div>
+        <div class="col-md-4 form-group mt-3 mt-md-0">
+          <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 form-group mt-3">
+          <input type="text" name="business-name" class="form-control datepicker" id="business-name" placeholder="Buisness Name" required>
+        </div>
+        <div class="col-md-4 form-group mt-3">
+          <select name="department" id="Business Type" class="form-select">
+            <option value="">Website needed</option>
+            <option value="Department 1">Department 1</option>
+            <option value="Department 2">Department 2</option>
+            <option value="Department 3">Department 3</option>
+          </select>
+        </div>
+        <div class="col-md-4 form-group mt-3">
+          <select name="doctor" id="doctor" class="form-select">
+            <option value="">Select Doctor</option>
+            <option value="Doctor 1">Doctor 1</option>
+            <option value="Doctor 2">Doctor 2</option>
+            <option value="Doctor 3">Doctor 3</option>
+          </select>
         </div>
       </div>
 
-    </section><!-- /About Section -->
+      <div class="form-group mt-3">
+        <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+      </div>
+      <div class="my-3">
+        <div class="loading">Loading</div>
+        <div class="error-message"></div>
+        <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
+      </div>
+      <div class="text-center"><button type="submit">Make an Appointment</button></div>
+    </form>
 
-
-
-
+  </div>
+</section><!-- End Appointment Section -->
 
 
  
@@ -193,66 +216,20 @@
 
 
 
-   
+   <!-- ======= Cta Section ======= -->
+<section id="cta" class="cta">
+  <div class="container" data-aos="zoom-in">
 
-    <!-- More Features Section -->
-    <section id="more-features" class="more-features section">
+    <div class="text-center">
+      <h3>Reach Out today to recieve a Free Estimate</h3>
+      <p>Fill out our questionaire about your business or contact us today!</p>
+      <a class="cta-btn scrollto" href="#appointment">Call</a>
+      <a class="cta-btn scrollto" href="#appointment">Email</a>
+    </div>
 
-      <div class="container">
+  </div>
+</section><!-- End Cta Section -->
 
-        <div class="row justify-content-around gy-4">
-
-          <div class="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-            <h3>Our web professionals are here to help your business succeed!</h3>
-            <p>Proven 4 step process:</p>
-
-            <div class="row">
-
-              <div class="col-lg-6 icon-box d-flex">
-                <i class="bi bi-easel flex-shrink-0"></i>
-                <div>
-                  <h4>Information Gathering </h4>
-                  <p>WE start our developement process with getting to know you and your business quilaities</p>
-                </div>
-              </div><!-- End Icon Box -->
-
-              <div class="col-lg-6 icon-box d-flex">
-                <i class="bi bi-patch-check flex-shrink-0"></i>
-                <div>
-                  <h4>Decision Process</h4>
-                  <p>Once we get the info we need we will then present you with what website will best suit your business</p>
-                </div>
-              </div><!-- End Icon Box -->
-
-              <div class="col-lg-6 icon-box d-flex">
-                <i class="bi bi-brightness-high flex-shrink-0"></i>
-                <div>
-                  <h4>Development</h4>
-                  <p>At this point you chosen which type of site you want and given the info we need. We now begin the development process which will have you involved every step of the way to ensure you get the website you imagined!</p>
-                </div>
-              </div><!-- End Icon Box -->
-
-              <div class="col-lg-6 icon-box d-flex">
-                <i class="bi bi-brightness-high flex-shrink-0"></i>
-                <div>
-                  <h4>Final meeting</h4>
-                  <p>This last step will be a final meeting where we will show you your website and take any and all feedback until you approve of the website. We will then get your website live on the internet!</p>
-                </div>
-              </div><!-- End Icon Box -->
-
-            </div>
-
-          </div>
-
-          <div class="features-image col-lg-5 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/features-3.jpg" alt="">
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
 
 
   </main>
