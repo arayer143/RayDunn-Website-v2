@@ -38,7 +38,7 @@
   $contact->add_message( $_POST['phone'], 'Phone');
   $contact->add_message( $_POST['business-name'], 'business-name');
   $contact->add_message( $_POST['department'], 'Department');
-  $contact->add_message( $_POST['doctor'], 'Doctor');
+
   $contact->add_message( $_POST['message'], 'Message');
 
   echo $contact->send();
