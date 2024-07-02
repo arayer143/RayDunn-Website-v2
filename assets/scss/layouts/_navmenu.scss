@@ -162,7 +162,7 @@
 /* Mobile Navigation */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
-    color: var(--nav-color);
+    color: white;
     font-size: 28px;
     line-height: 0;
     margin-right: 10px;
@@ -202,7 +202,7 @@
       transition: 0.3s;
 
       i {
-        font-size: 12px;
+        font-size: 16px;
         line-height: 0;
         margin-left: 5px;
         width: 30px;
@@ -212,10 +212,10 @@
         justify-content: center;
         border-radius: 50%;
         transition: 0.3s;
-        background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+        background-color: color-mix(in srgb, var(--primary), transparent 90%);
 
         &:hover {
-          background-color: var(--accent-color);
+          background-color: var(--primary);
           color: var(--contrast-color);
         }
       }
