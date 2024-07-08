@@ -54,13 +54,16 @@
       margin-right: 10px;
       transition: 0.3s;
 
+      :hover {
+        font-size: 20px;
+      }
+
       i{
         color:white;
       }
 
-      &:hover {
-        color: var(--accent-color);
-        border-color: var(--accent-color);
+      i:hover {
+        color: var(--primary);
       }
     }
   }

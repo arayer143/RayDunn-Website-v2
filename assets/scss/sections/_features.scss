@@ -3,6 +3,10 @@
 # Features Section
 --------------------------------------------------------------*/
 .features {
+
+
+  
+  
   .nav-tabs {
     border: 0;
   }
@@ -19,6 +23,7 @@
   .nav-link {
     color: var(--heading-color);
     border: 0;
+
     padding: 30px;
     transition: 0.3s;
     border-radius: 10px;
@@ -37,7 +42,7 @@
       font-size: 22px;
       flex-shrink: 0;
       border-radius: 50px;
-      box-shadow: 0 2px 4px color-mix(in srgb, var(--default-color), transparent 85%);
+      box-shadow: 0 2px 4px color-mix(in srgb, var(--default-color), transparent 65%);
     }
 
     h4 {
@@ -53,20 +58,22 @@
     }
 
     &:hover {
-      background: color-mix(in srgb, var(--accent-color), transparent 96%);
+      background: color-mix(in srgb, var(--accent-color), transparent 66%);
     }
 
     &.active {
-      background: color-mix(in srgb, var(--accent-color), transparent 92%);
+      background: color-mix(in srgb, var(--accent-color), transparent 82%);
     }
   }
 
   .tab-pane {
-    background: color-mix(in srgb, var(--accent-color), transparent 92%);
+    background: color-mix(in srgb, var(--accent-color), transparent 82%);
     box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.10);
+    margin-bottom: 5rem;
+    border-radius: 2rem;
 
     .tab-info{
-    
+    padding: 1rem;
  
 
 
