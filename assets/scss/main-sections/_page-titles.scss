@@ -1,34 +1,53 @@
-// main: ../main.scss
+// Global Page titles
+
+
+
+
 /*--------------------------------------------------------------
-# Global Page Titles & Breadcrumbs
+# Section Titles
 --------------------------------------------------------------*/
-.page-title {
-  --background-color: color-mix(in srgb, var(--default-color), transparent 96%);
-  color: var(--default-color);
-  background-color: var(--background-color);
- 
-  height: 300px;
+.section-title {
+  text-align: center;
+  padding-bottom: 60px;
   position: relative;
 
-
-  h1 {
-    font-size: 24px;
+  h2 {
+    font-size: 32px;
     font-weight: 700;
-    color: white;
-   
-    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
 
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: var(--accent-color);
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
   }
 
+  p {
+    margin-bottom: 0;
+  }
 }
 
 
 
+
+
+
+
   /*--------------------------------------------------------------
-  # Breadcrumbs
+  # secondary-page-banner
   --------------------------------------------------------------*/
-  .breadcrumbs {
-    padding: 140px 0 60px 0;
+  .secondary-page-banner {
+    padding: 180px 0 60px 0;
     min-height: 30vh;
 
     position: relative;
@@ -37,14 +56,14 @@
     background-repeat: no-repeat;
   }
   
-  .breadcrumbs:before {
+  .secondary-page-banner:before {
     content: "";
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
     inset: 0;
   }
   
-  .breadcrumbs h2 {
+  .secondary-page-banner h2 {
     font-size: 46px;
     font-weight: 500;
     color: #fff;
