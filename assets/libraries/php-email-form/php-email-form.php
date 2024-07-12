@@ -13,6 +13,7 @@ if ( version_compare(phpversion(), '5.5.0', '<') ) {
 class PHP_Email_Form {
 
   public $to = false;
+  public $from_name = false;
   public $from_email = false;
   public $subject = false;
   public $phone = false;
@@ -34,6 +35,7 @@ class PHP_Email_Form {
 
   public $error_msg = array(
     'invalid_to_email' => 'Email to (receiving email address) is empty or invalid!',
+    'invalid_from_name' => 'From Name is empty!',
     'invalid_from_email' => 'Email from: is empty or invalid!',
     'invalid_subject' => 'Subject is too short or empty!',
     'short' => 'is too short or empty!',
