@@ -37,7 +37,7 @@
   $contact->add_message( $_POST['email'], 'Email');
   $contact->add_message( $_POST['phone'], 'Phone');
   $contact->add_message( $_POST['business'], 'business Name');
-  $contact->add_message( $_POST['department'], 'Department');
+  $contact->add_message( $_POST['profile'], 'Social link:');
 
   $contact->add_message( $_POST['message'], 'Message');
 
