@@ -2,12 +2,17 @@
 /*--------------------------------------------------------------
 # Services 2 Section
 --------------------------------------------------------------*/
-.services-2 {
+#services-2 {
   .content-subtitle {
     font-size: 15px;
     margin-bottom: 10px;
+    margin-top: 20px;
     display: block;
     color: var(--default-color);
+  }
+
+  .logo-img{
+    max-width: 120px;
   }
 
   .content-title {
