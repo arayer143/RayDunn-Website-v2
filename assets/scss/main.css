@@ -1389,7 +1389,8 @@ section,
 .features .nav-link {
   color: var(--heading-color);
   border: 0;
-  padding: 30px;
+  margin-bottom: 0.5rem;
+  padding: 10px;
   transition: 0.3s;
   border-radius: 10px;
   display: flex;
@@ -1428,7 +1429,6 @@ section,
 .features .tab-pane {
   background: color-mix(in srgb, var(--accent-color), transparent 82%);
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
-  margin-bottom: 5rem;
   border-radius: 2rem;
 }
 .features .tab-pane .tab-info {
