@@ -13,7 +13,6 @@ if ( version_compare(phpversion(), '5.5.0', '<') ) {
 class PHP_Email_Form {
 
   public $to = false;
-  public $from_name = false;
   public $from_email = false;
   public $subject = false;
   public $phone = false;
