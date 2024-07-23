@@ -20,7 +20,7 @@
   
   $contact->to = $receiving_email_address;
   $contact->from_email = $_POST['email'];
-  $contact->subject ="New Subscription: " . $_POST['email'];
+  $contact->subject ="New Subscription from ";
 
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
   /*
