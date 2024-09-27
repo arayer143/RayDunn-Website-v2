@@ -141,7 +141,7 @@ h6 {
 .header-secondary {
   color: var(--default-color);
   background-color: grey;
-  padding: 20px 0;
+  padding: 10px 0;
   transition: all 0.5s;
   z-index: 997;
 }
@@ -202,6 +202,32 @@ h6 {
 ------------------------------*/
 .index-page .header-secondary {
   --background-color: rgba(255, 255, 255, 0);
+}
+
+/*--------------------------------------------------------------
+# secondary-page-banner
+--------------------------------------------------------------*/
+.secondary-page-banner {
+  padding: 120px 0 60px 0;
+  min-height: 30vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.secondary-page-banner:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  inset: 0;
+}
+
+.secondary-page-banner h1 {
+  font-size: 42px;
+  font-weight: 500;
+  color: #fff;
+  justify-content: flex-start;
 }
 
 /*--------------------------------------------------------------
@@ -393,7 +419,7 @@ h6 {
   .navmenu a i:hover,
   .navmenu a:focus i:hover {
     background-color: var(--primary);
-    color: var(--contrast-color);
+    color: var(--primary);
   }
   .navmenu a:hover,
   .navmenu .active,
@@ -402,7 +428,7 @@ h6 {
   }
   .navmenu .active i,
   .navmenu .active:focus i {
-    background-color: var(--accent-color);
+    background-color: var(--default-color);
     color: var(--contrast-color);
     transform: rotate(180deg);
   }
@@ -412,13 +438,16 @@ h6 {
     z-index: 99;
     padding: 10px 0;
     margin: 10px 20px;
-    background-color: var(--nav-dropdown-background-color);
-    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    background-color: grey;
+    border: 1px solid color-mix(in srgb, var(--primary), transparent 90%);
     transition: all 0.5s ease-in-out;
     box-shadow: none;
   }
   .navmenu .dropdown ul ul {
     background-color: rgba(33, 37, 41, 0.1);
+  }
+  .navmenu .dropdown ul a {
+    color: black;
   }
   .navmenu .dropdown > .dropdown-active {
     display: block;
@@ -686,6 +715,25 @@ h6 {
   padding-bottom: 60px;
   position: relative;
 }
+.section-title h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.section-title h1:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
 .section-title h2 {
   font-size: 32px;
   font-weight: 700;
@@ -713,7 +761,7 @@ h6 {
 # secondary-page-banner
 --------------------------------------------------------------*/
 .secondary-page-banner {
-  padding: 180px 0 60px 0;
+  padding: 120px 0 60px 0;
   min-height: 30vh;
   position: relative;
   background-size: cover;
@@ -762,7 +810,7 @@ section,
   display: flex;
   position: relative;
   background-color: gray;
-  padding: 180px 0 40px 0;
+  padding: 50px 0 40px 0;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -843,7 +891,7 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
   box-shadow: 0 8px 28px color-mix(in srgb, var(--accent-color), transparent 55%);
 }
-@media (max-width: 640px) {
+@media (max-width: 840px) {
   .hero h1 {
     font-size: 28px;
     line-height: 36px;
@@ -971,12 +1019,12 @@ section,
   font-weight: 600;
   color: black;
 }
-.about .content h3 {
-  font-size: 2rem;
-  font-weight: 700;
+.about .content h1 {
+  font-size: 15px;
+  color: var(--accent-color);
 }
 @media (max-width: 450px) {
-  .about .content h3 {
+  .about .content h1 {
     text-align: center;
     margin-right: 1rem;
   }
@@ -1031,11 +1079,14 @@ section,
 .about .content .read-more:hover i {
   margin-left: 10px;
 }
-.about .about-images img {
+.about .about-image {
+  background-color: rgb(87, 86, 86);
+}
+.about .about-image img {
+  background-color: rgb(87, 86, 86);
   border-radius: 10px;
   margin-right: 2rem;
   padding: 2rem;
-  background-color: rgb(87, 86, 86);
 }
 
 /*--------------------------------------------------------------
@@ -1621,6 +1672,95 @@ section,
   color: var(--contrast-color);
 }
 
+.logo-design-services .logo-service-item {
+  position: relative;
+  height: 100%;
+  margin-bottom: 30px;
+}
+.logo-design-services .logo-service-item .logo-service-icon {
+  margin-right: 20px;
+}
+.logo-design-services .logo-service-item .logo-service-icon i {
+  color: black;
+  font-size: 40px;
+  line-height: 1;
+  transition: 0.3s;
+}
+.logo-design-services .logo-service-item:hover .logo-service-icon i {
+  color: #d4af37;
+}
+.logo-design-services .logo-service-item .title {
+  color: #d4af37;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.logo-design-services .logo-service-item .description {
+  font-size: 15px;
+  color: color-mix(in srgb, #3d4348, transparent 30%);
+  margin-bottom: 10px;
+}
+.logo-design-services .logo-service-item .readmore {
+  display: flex;
+  align-items: center;
+  color: color-mix(in srgb, #3d4348, transparent 50%);
+  transition: 0.3s;
+  font-weight: 700;
+  font-size: 14px;
+}
+.logo-design-services .logo-service-item .readmore i {
+  margin-left: 8px;
+}
+.logo-design-services .logo-service-item:hover .title,
+.logo-design-services .logo-service-item:hover .readmore,
+.logo-design-services .logo-service-item:hover .icon i {
+  color: #d4af37;
+}
+
+.logo-service-cards h3 {
+  text-align: center;
+  padding: 2rem;
+  font-size: 25px;
+}
+.logo-service-cards .logo-card-item {
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  position: relative;
+  border-radius: 0;
+}
+.logo-service-cards .logo-card-item .logo-card-bg {
+  min-height: 250px;
+  position: relative;
+}
+.logo-service-cards .logo-card-item .logo-card-bg img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  z-index: 1;
+  padding: 1rem;
+}
+.logo-service-cards .logo-card-item .logo-card-body {
+  padding: 30px;
+}
+.logo-service-cards .logo-card-item h4 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.logo-service-cards .logo-card-item p {
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  margin: 0;
+}
+.logo-service-cards .logo-card-title {
+  text-align: center;
+}
+
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
@@ -1893,32 +2033,39 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
-.portfolio-details .portfolio-details-slider img {
+.portfolio-details {
+  padding-top: 90px;
+}
+.portfolio-details .portfolio-img {
   width: 100%;
-}
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
-  opacity: 1;
-}
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
+  box-shadow: 10px 10px 8px 10px #888888;
+  padding: 30px;
 }
 .portfolio-details .portfolio-info {
   padding: 30px;
-  box-shadow: 0px 0 30px color-mix(in srgb, var(--default-color), transparent 90%);
+  width: 100%;
+  background-color: whitesmoke;
+  box-shadow: 5px 20px #d4af37;
 }
 .portfolio-details .portfolio-info h3 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 20px;
+  text-align: center;
   padding-bottom: 20px;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-bottom: 1px solid #eee;
+}
+.portfolio-details .portfolio-info a {
+  border-radius: 2rem;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
+  padding: 5px 10px 5px;
+  color: black;
+  margin: 10px 10px;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.portfolio-details .portfolio-info a:hover {
+  background-color: #d4af37;
 }
 .portfolio-details .portfolio-info ul {
   list-style: none;
@@ -1926,19 +2073,128 @@ section,
   font-size: 15px;
 }
 .portfolio-details .portfolio-info ul li + li {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 .portfolio-details .portfolio-description {
   padding-top: 30px;
+  text-align: center;
+  padding: 30px;
 }
 .portfolio-details .portfolio-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
+.portfolio-details .portfolio-description h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
 .portfolio-details .portfolio-description p {
   padding: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+.portfolio-services {
+  margin-top: -4rem;
+}
+.portfolio-services .section-title h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.portfolio-services .section-title h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.portfolio-services .section-title p {
+  margin-bottom: 0;
+}
+.portfolio-services .portfolio-service-item {
+  background-color: whitesmoke;
+  box-shadow: 0px 0 30px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  transition: all ease-in-out 0.4s;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+.portfolio-services .portfolio-service-item:before {
+  content: "";
+  position: absolute;
+  background: color-mix(in srgb, var(--accent-color), transparent 66%);
+  right: -80px;
+  top: -80px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.portfolio-services .portfolio-service-item:after {
+  content: "";
+  position: absolute;
+  background: color-mix(in srgb, var(--accent-color), transparent 77%);
+  right: -140px;
+  top: -140px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.portfolio-services .portfolio-service-item i {
+  background: var(--white);
+  color: var(--black);
+  font-size: 34px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+.portfolio-services .portfolio-service-item h4 {
+  font-weight: 600;
+  margin: 15px 0 0 0;
+  transition: 0.3s;
+  font-size: 20px;
+}
+.portfolio-services .portfolio-service-item h4 a {
+  color: var(--heading-color);
+}
+.portfolio-services .portfolio-service-item p {
+  line-height: 24px;
+  font-size: 14px;
+  margin: 10px 0 0 0;
+}
+.portfolio-services .portfolio-service-item:hover:before, .portfolio-services .portfolio-service-item:hover:after {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 77%);
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+}
+.portfolio-services .portfolio-service-item:hover h4 a,
+.portfolio-services .portfolio-service-item:hover p {
+  color: black;
+}
+.portfolio-services .portfolio-service-item:hover i {
+  background: #3d4348;
+  color: white;
 }
 
 /*--------------------------------------------------------------
@@ -2162,6 +2418,128 @@ section,
 .service-details ul i {
   font-size: 20px;
   margin-right: 8px;
+  color: var(--accent-color);
+}
+
+.services-page-about {
+  padding-top: 100px;
+}
+.services-page-about .services-about-content h2 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  padding: 10px 20px;
+  background: color-mix(in srgb, var(--accent-color), transparent 95%);
+  color: var(--accent-color);
+  border-radius: 7px;
+  display: inline-block;
+}
+.services-page-about .services-about-content h3 {
+  font-weight: 700;
+}
+.services-page-about .services-about-content p:last-child {
+  margin-bottom: 0;
+}
+.services-page-about .services-about-content .services-read-more {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.services-page-about .services-about-content .services-read-more i {
+  font-size: 18px;
+  margin-left: 5px;
+  line-height: 0;
+  transition: 0.3s;
+}
+.services-page-about .services-about-content .services-read-more:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  padding-right: 19px;
+}
+.services-page-about .services-about-content .services-read-more:hover i {
+  margin-left: 10px;
+}
+.services-page-about .services-icon-box {
+  background-color: var(--surface-color);
+  padding: 50px 40px;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: all 0.3s ease-out 0s;
+}
+.services-page-about .services-icon-box i {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  font-size: 32px;
+  line-height: 0;
+  transition: all 0.4s ease-out 0s;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+  color: var(--accent-color);
+}
+.services-page-about .services-icon-box h4 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.services-page-about .services-icon-box p {
+  margin-bottom: 0;
+}
+.services-page-about .services-icon-box:hover i {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+.services-page-about .services-icon-boxes .col-md-6:nth-child(2) .icon-box,
+.services-page-about .services-icon-boxes .col-md-6:nth-child(4) .icon-box {
+  margin-top: -40px;
+}
+@media (max-width: 768px) {
+  .services-page-about .services-icon-boxes .col-md-6:nth-child(2) .icon-box,
+  .services-page-about .services-icon-boxes .col-md-6:nth-child(4) .icon-box {
+    margin-top: 0;
+  }
+}
+
+.about-page-features .about-page-features-item {
+  background-color: var(--surface-color);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  transition: 0.3s;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  position: relative;
+}
+.about-page-features .about-page-features-item i {
+  font-size: 32px;
+  padding-right: 10px;
+  line-height: 0;
+}
+.about-page-features .about-page-features-item h3 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+}
+.about-page-features .about-page-features-item h3 a {
+  color: var(--heading-color);
+  transition: 0.3s;
+}
+.about-page-features .about-page-features-item:hover {
+  border-color: var(--accent-color);
+}
+.about-page-features .about-page-features-item:hover h3 a {
   color: var(--accent-color);
 }
 

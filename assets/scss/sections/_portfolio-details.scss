@@ -3,38 +3,43 @@
 # Portfolio Details Section
 --------------------------------------------------------------*/
 .portfolio-details {
-  .portfolio-details-slider {
-    img {
-      width: 100%;
-    }
 
-    .swiper-pagination {
-      margin-top: 20px;
-      position: relative;
+  padding-top: 90px;
 
-      .swiper-pagination-bullet {
-        width: 12px;
-        height: 12px;
-        background-color: color-mix(in srgb, var(--default-color), transparent 85%);
-        opacity: 1;
-      }
-
-      .swiper-pagination-bullet-active {
-        background-color: var(--accent-color);
-      }
-    }
-  }
+.portfolio-img{
+  width: 100%;
+  box-shadow: 10px 10px 8px 10px #888888;
+  padding: 30px;
+}
 
   .portfolio-info {
     padding: 30px;
-    box-shadow: 0px 0 30px color-mix(in srgb, var(--default-color), transparent 90%);
+    width: 100%;
+    background-color: whitesmoke;
+    box-shadow: 5px 20px  $primary;
 
     h3 {
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 700;
       margin-bottom: 20px;
+      text-align: center;
       padding-bottom: 20px;
-      border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+      border-bottom: 1px solid #eee;
+    }
+
+    a{
+      border-radius: 2rem;
+      background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
+      padding: 5px 10px 5px;
+      color: black;
+
+      margin: 10px 10px;
+      margin-bottom: 2rem;
+      margin-top: 1rem;
+
+      &:hover{
+        background-color: $primary;
+      }
     }
 
     ul {
@@ -42,24 +47,33 @@
       padding: 0;
       font-size: 15px;
 
-      li+li {
-        margin-top: 10px;
+      li +li {
+        margin-top: 15px;
       }
     }
+    
   }
 
   .portfolio-description {
     padding-top: 30px;
+    text-align: center;
+    padding: 30px;
 
+    
     h2 {
       font-size: 26px;
       font-weight: 700;
       margin-bottom: 20px;
     }
 
+    h4{
+      font-size: 20px;
+      font-weight: 600;
+    }
+
     p {
       padding: 0;
-      color: color-mix(in srgb, var(--default-color), transparent 30%);
     }
   }
+
 }

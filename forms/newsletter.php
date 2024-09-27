@@ -32,7 +32,7 @@
   );
   */
 
-  $contact->add_message( $_POST['email'], 'Email');
+  $contact->add_message( $_POST['email'], 'email');
 
   echo $contact->send();
 ?>

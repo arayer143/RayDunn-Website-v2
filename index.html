@@ -18,10 +18,6 @@
   <link href="assets/img/RayDunn-logo-noBG.webp" rel="icon">
 
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- libraries CSS Files -->
   <link href="assets/libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -50,8 +46,23 @@
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li class="dropdown"><a href="services.html"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="custom-web-design.html">Custom Website Designs</a></li>
+              <li><a href="seo.html">Search Engine Optimization</a></li>
+              <li><a href="domain-hosting.html">Domain Hosting</a></li>
+              <li><a href="logo-design.html">Logo Design</a></li>
+       
+            </ul>
+          </li>
+          <li class="dropdown"><a href="portfolio.html"><span>Portfolio</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="clean-slate.html">Clean Slate Pressure Washing </a></li>
+              <li><a href="pristine-clean.html">Pristine Clean Soft Wash</a></li>
+              <li><a href="outkast.html">OutKast Industrial Group</a></li>
+       
+            </ul>
+          </li>
 
 <!--
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -96,11 +107,11 @@
 
         
         <div class="hero-div d-flex flex-column justify-content-center align-items-center">
-          <h1 data-aos="fade-up">Welcome to <span>RayDunn Web Solutions </span></h1>
+    
           <p data-aos="fade-up" data-aos-delay="100">Let us create a website for your business you are proud of!<br></p>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="tel:" class="btn-get-started">Get Started</a>
-            <a href="#about" class="btn-get-started">Email</a>
+            <a href="tel:9858692356" class="btn-get-started">Get Started</a>
+            <a href="mailto:raydunntech@gmail.com" class="btn-get-started">Email</a>
          
           </div>
 
@@ -125,13 +136,13 @@
         <div class="row gy-4">
 
           <div class="col-lg-5 about-image" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/Raydunn-logo-noBG.png" class="img-fluid" alt="">
+            <img src="assets/img/Raydunn-logo-noBG.png" class="img-fluid"  alt="">
 
             <div class="social-links d-flex text-center mt-4">
               <a href="https://www.facebook.com/profile.php?id=61555772144949"><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.linkedin.com/company/raydunn-web-solutions"><i class="bi bi-linkedin"></i></a>
               <a href="malto:raydunntech@gmail.com"><i class="bi bi-envelope-fill"></i></a>
-              <a href="tel:504"><i class="bi bi-telephone-fill"></i></a>
+              <a href="tel:9858692356"><i class="bi bi-telephone-fill"></i></a>
             </div>
            
           </div>
@@ -144,9 +155,9 @@
               
 
                 <p class="who-we-are">Who We Are</p>
-                <h3>RayDunn Web Solutions 
+                <h1>RayDunn Web Solutions 
     
-                </h3>
+                </h1>
                 <div class="hero-p mb-3">
                   RayDunn Web Solutions a Web Development Company in New Orleans, LA that specalizes in making websites for business to stand out in this internet driven world!
                 </div>
@@ -842,47 +853,39 @@
           </div>
           <div class="social-links d-flex mt-4">
             <a href="https://www.facebook.com/profile.php?id=61555772144949"><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.linkedin.com/company/raydunn-web-solutions/"><i class="bi bi-linkedin"></i></a>
             <a href="malto:raydunntech@gmail.com"><i class="bi bi-envelope-fill"></i></a>
             <a href="tel:5046502562"><i class="bi bi-telephone-fill"></i></a>
           </div>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
+        <div class="col-lg-4 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        
+            <li><a href="services.html">All Services</a></li>
+            <li><a href="portfolio.html">Our Portfolio</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+ 
           </ul>
         </div>
-<!--
-        <div class="col-lg-2 col-md-3 footer-links">
+
+
+        <div class="col-lg-4 col-md-3 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="web-design.html">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="custom-web-design.html">Custom Web Design</a></li>
+            <li><a href="seo.html">Search Engine Optimization (SEO)</a></li>
+            <li><a href="domain-hosting.html">Domain Hostin</a></li>
+            <li><a href="logo-design.html">Logo Design</a></li>
+
           </ul>
         </div>
 
-        -->
+  
 
-        <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-          <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-          </form>
-        </div>
+
 
       </div>
     </div>

@@ -22,7 +22,7 @@ section,
 @import './sections/_hero.scss';
 @import './sections/_accordion.scss';
 @import './sections/_about.scss';
-@import './sections/_about-page';
+@import './sections/_about-page.scss';
 @import './sections/_clients.scss';
 @import './sections/call-to-action.scss';
 @import './sections/_contact.scss';
@@ -30,13 +30,17 @@ section,
 @import './sections/_features.scss';
 @import './sections/_features-details.scss';
 @import './sections/_featured-services.scss';
+@import './sections/_logo-design-page.scss';
 @import './sections/_services.scss';
 @import './sections/_services-2.scss';
 @import './sections/_more-features.scss';
 @import './sections/_portfolio.scss';
-@import './sections/portfolio-details';
+@import './sections/_portfolio-details.scss';
+@import './sections/_portfolio-services.scss';
 @import './sections/_pricing.scss';
 @import './sections/_service-details.scss';
+@import './sections/_services-page-about.scss';
+@import './sections/_services-page-features.scss';
 @import './sections/_starter-section.scss';
 @import './sections/_testimonials.scss';
 @import './sections/_questionaire.scss';
